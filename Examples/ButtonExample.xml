@@ -6,7 +6,7 @@
   Now, copy the XML below and paste it into the file and save.
   <code>
     <![CDATA[
-<Glide Version="x.x.x">
+<Glide Version="1.0.7">
   <Window Name="window" Width="320" Height="240" BackColor="dce3e7">
     <Button Name="btn" X="100" Y="104" Width="120" Height="32" Alpha="255" Text="Click me" Font="4" FontColor="000000" DisabledFontColor="808080" TintColor="000000" TintAmount="0"/>
   </Window>

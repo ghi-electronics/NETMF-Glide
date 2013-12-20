@@ -6,7 +6,7 @@
   Now, copy the XML below and paste it into the file and save.
   <code>
     <![CDATA[
-<Glide Version="x.x.x">
+<Glide Version="1.0.7">
   <Window Name="window" Width="320" Height="240" BackColor="dce3e7">
     <Slider Name="voltSlider" X="145" Y="45" Width="30" Height="150" Alpha="255" Direction="vertical" SnapInterval="5" TickInterval="5" TickColor="000000" KnobSize="20" Minimum="0" Maximum="5" Value="3"/>
     <TextBlock Name="topVoltTxt" X="110" Y="13" Width="100" Height="32" Alpha="255" Text="5.000 Volts" TextAlign="Center" TextVerticalAlign="Bottom" Font="4" FontColor="929ba0"/>

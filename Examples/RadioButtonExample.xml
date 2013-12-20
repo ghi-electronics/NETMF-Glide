@@ -6,7 +6,7 @@
   Now, copy the XML below and paste it into the file and save.
   <code>
     <![CDATA[
-<Glide Version="x.x.x">
+<Glide Version="1.0.7">
   <Window Name="window" Width="320" Height="240" BackColor="dce3e7">
     <TextBlock Name="question" X="0" Y="20" Width="320" Height="32" Alpha="255" Text="Are you attending the event?" TextAlign="Center" Font="5" FontColor="000000"/>
     <RadioButton Name="radio1" X="60" Y="80" Width="32" Height="32" Alpha="255" Value="Yes" Checked="False" GroupName="radioButtonGroup" ShowBackground="True" Color="d4d4d4" OutlineColor="b8b8b8" SelectedColor="358bf6" SelectedOutlineColor="002dff"/>

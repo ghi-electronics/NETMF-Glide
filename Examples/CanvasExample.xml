@@ -6,7 +6,7 @@
   Now, copy the XML below and paste it into the file and save.
   <code>
     <![CDATA[
-<Glide Version="x.x.x">
+<Glide Version="1.0.7">
   <Window Name="window" Width="320" Height="240" BackColor="dce3e7">
     <TextBlock Name="textBlock" X="40" Y="40" Width="50" Height="32" Alpha="255" Text="Login" TextAlign="Right" TextVerticalAlign="Middle" Font="4" FontColor="000000"/>
     <TextBlock Name="emailTxt" X="40" Y="72" Width="75" Height="32" Alpha="255" Text="Email" TextAlign="Right" TextVerticalAlign="Middle" Font="2" FontColor="000000"/>

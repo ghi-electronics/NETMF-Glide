@@ -6,7 +6,7 @@
   Now, copy the XML below and paste it into the file and save.
   <code>
     <![CDATA[
-<Glide Version="x.x.x">
+<Glide Version="1.0.7">
   <Window Name="window" Width="320" Height="240" BackColor="dce3e7">
     <TextBlock Name="textBlock" X="110" Y="104" Width="100" Height="32" Alpha="255" Text="I'm a label." TextAlign="Center" Font="4" FontColor="000000"/>
   </Window>
