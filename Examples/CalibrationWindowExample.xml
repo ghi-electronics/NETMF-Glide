@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<example>
+  Create a new .NET Micro Framework project using the Console Application template and call it "Test".
+  Next, open Resources.resx, select Add Resource and click Add New Text File.
+  In the prompt, name the new resource "Window" and click Add.
+  Now, copy the XML below and paste it into the file and save.
+  <code>
+    <![CDATA[
+<Glide Version="x.x.x">
+  <Window Name="window" Width="320" Height="240" BackColor="dce3e7">
+    <Button Name="btn" X="20" Y="20" Width="80" Height="32" Alpha="255" Text="Calibrate" Font="3" FontColor="000000" DisabledFontColor="808080" TintColor="000000" TintAmount="0"/>
+  </Window>
+</Glide>
+  ]]>
+  </code>
+  Open Program.cs and replace the code with the code below:
+  <code>
+    <![CDATA[
+using System.Threading;
+
+using GHIElectronics.NETMF.Glide;
+using GHIElectronics.NETMF.Glide.Display;
+using GHIElectronics.NETMF.Glide.UI;
+
+namespace Test
+{
+    public class Program
+    {
+        // The windows.
+        static Window window;
+        static CalibrationWindow calWindow;
+
+        public static void Main()
+        {
+            // Load the window
+            window = GlideLoader.LoadWindow(Resources.GetString(Resources.StringResources.Window));
+
+            // Activate touch
+            GlideTouch.Initialize();
+
+            // Initialize the windows.
+            InitWin();
+            InitCalWin();
+
+            // Assigning a window to MainWindow flushes it to the screen.
+            // This also starts event handling on the window.
+            Glide.MainWindow = window;
+
+            Thread.Sleep(-1);
+        }
+
+        static void InitWin()
+        {
+            Button btn = (Button)window.GetChildByName("btn");
+
+            // Open the calibration window.
+            btn.TapEvent += new OnTap(btn_TapEvent);
+        }
+
+        static void btn_TapEvent(object sender)
+        {
+            // Switch to calibration window.
+            Glide.MainWindow = calWindow;
+        }
+
+        static void InitCalWin()
+        {
+            // 1st argument is auto start, which immediately starts calibration once the window is open.
+            // 2nd argument is auto save, which saves the calibration settings for future restarts.
+            calWindow = new CalibrationWindow(false, false);
+
+            // Close the calibration window.
+            calWindow.CloseEvent += new OnClose(calWindow_CloseEvent);
+        }
+
+        static void calWindow_CloseEvent(object sender)
+        {
+            // Switch to normal window.
+            Glide.MainWindow = window;
+        }
+    }
+}
+  ]]>
+  </code>
+  Before we run it, we must add the Glide reference by right-clicking References and selecting Add Reference.
+  In the new window select the Browse tab, locate GHIElectronics.NETMF.Glide and click Ok.
+  Now that everything is ready, press F5 to run the example.
+</example>

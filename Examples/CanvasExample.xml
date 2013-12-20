@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<example>
+  Create a new .NET Micro Framework project using the Console Application template and call it "Test".
+  Next, open Resources.resx, select Add Resource and click Add New Text File.
+  In the prompt, name the new resource "Window" and click Add.
+  Now, copy the XML below and paste it into the file and save.
+  <code>
+    <![CDATA[
+<Glide Version="x.x.x">
+  <Window Name="window" Width="320" Height="240" BackColor="dce3e7">
+    <TextBlock Name="textBlock" X="40" Y="40" Width="50" Height="32" Alpha="255" Text="Login" TextAlign="Right" TextVerticalAlign="Middle" Font="4" FontColor="000000"/>
+    <TextBlock Name="emailTxt" X="40" Y="72" Width="75" Height="32" Alpha="255" Text="Email" TextAlign="Right" TextVerticalAlign="Middle" Font="2" FontColor="000000"/>
+    <TextBlock Name="passTxt" X="40" Y="109" Width="75" Height="32" Alpha="255" Text="Password" TextAlign="Right" TextVerticalAlign="Middle" Font="2" FontColor="000000"/>
+    <TextBox Name="emailTxt" X="125" Y="72" Width="150" Height="32" Alpha="255" Text="" TextAlign="Left" Font="2" FontColor="000000"/>
+    <TextBox Name="passTxt" X="125" Y="109" Width="150" Height="32" Alpha="255" Text="" TextAlign="Left" Font="4" FontColor="000000"/>
+    <Button Name="loginBtn" X="125" Y="160" Width="150" Height="32" Alpha="255" Text="Login" Font="2" FontColor="000000" DisabledFontColor="808080" TintColor="000000" TintAmount="0"/>
+    <TextBlock Name="titleTxt" X="0" Y="0" Width="320" Height="32" Alpha="255" Text="Canvas Example" TextAlign="Center" TextVerticalAlign="Middle" Font="4" FontColor="0000FF"/>
+  </Window>
+</Glide>
+  ]]>
+  </code>
+  Open Program.cs and replace the code with the code below:
+  <code>
+    <![CDATA[
+using System.Threading;
+
+using GHIElectronics.NETMF.Glide;
+using GHIElectronics.NETMF.Glide.Display;
+using GHIElectronics.NETMF.Glide.UI;
+
+namespace Test
+{
+    public class Program
+    {
+        // This will hold the main window.
+        static Window window;
+
+        public static void Main()
+        {
+            // Load the window
+            window = GlideLoader.LoadWindow(Resources.GetString(Resources.StringResources.Window));
+
+            // Activate touch
+            GlideTouch.Initialize();
+
+            // Initialize the window.
+            InitWin();
+
+            // Assigning a window to MainWindow flushes it to the screen.
+            // This also starts event handling on the window.
+            Glide.MainWindow = window;
+
+            Thread.Sleep(-1);
+        }
+
+        static void InitWin()
+        {
+            // Create a Canvas
+            // The Canvas object has no parameters as it's only used to issue draw commands when rendered.
+            Canvas canvas = new Canvas();
+            window.AddChild(canvas);
+
+            // Draw a separator line.
+            canvas.DrawLine(Colors.Blue, 1, 0, 32, window.Width, 32);
+
+            // Draw a fieldset around our "Login" text block.
+            TextBlock textBlock = (TextBlock)window.GetChildByName("textBlock");
+            canvas.DrawFieldset(textBlock, 10, 200, 150, Colors.DarkGray, 1);            
+        }
+    }
+}
+  ]]>
+  </code>
+  Before we run it, we must add the Glide reference by right-clicking References and selecting Add Reference.
+  In the new window select the Browse tab, locate GHIElectronics.NETMF.Glide and click Ok.
+  Now that everything is ready, press F5 to run the example.
+</example>
