@@ -18,9 +18,9 @@
     <![CDATA[
 using System.Threading;
 
-using GHIElectronics.NETMF.Glide;
-using GHIElectronics.NETMF.Glide.Display;
-using GHIElectronics.NETMF.Glide.UI;
+using GHI.Glide;
+using GHI.Glide.Display;
+using GHI.Glide.UI;
 
 namespace Test
 {
@@ -79,6 +79,6 @@ namespace Test
   ]]>
   </code>
   Before we run it, we must add the Glide reference by right-clicking References and selecting Add Reference.
-  In the new window select the Browse tab, locate GHIElectronics.NETMF.Glide and click Ok.
+  In the new window select the Browse tab, locate GHI.Glide and click Ok.
   Now that everything is ready, press F5 to run the example.
 </example>
