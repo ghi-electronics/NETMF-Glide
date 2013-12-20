@@ -11,10 +11,10 @@ using System.Xml;
 using System.IO;
 using Microsoft.SPOT;
 using Microsoft.SPOT.Presentation.Media;
-using GHIElectronics.NETMF.Glide.Display;
-using GHIElectronics.NETMF.Glide.UI;
+using GHI.Glide.Display;
+using GHI.Glide.UI;
 
-namespace GHIElectronics.NETMF.Glide
+namespace GHI.Glide
 {
     /// <summary>
     /// The GlideLoader class parses XML into components.

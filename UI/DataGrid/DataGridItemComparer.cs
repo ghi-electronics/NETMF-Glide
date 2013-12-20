@@ -8,7 +8,7 @@ using System;
 using System.Collections;
 using Microsoft.SPOT;
 
-namespace GHIElectronics.NETMF.Glide.UI
+namespace GHI.Glide.UI
 {
     /// <summary>
     /// The DataGridItemComparer class allows comparison between DataGridItems.

@@ -9,7 +9,7 @@ using System.Collections;
 using Microsoft.SPOT;
 using Microsoft.SPOT.Presentation.Media;
 
-namespace GHIElectronics.NETMF.Glide
+namespace GHI.Glide
 {
     /// <summary>
     /// The Utils class contains utility methods that help other classes.

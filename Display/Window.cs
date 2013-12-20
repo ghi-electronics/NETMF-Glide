@@ -7,7 +7,7 @@
 using Microsoft.SPOT;
 using Microsoft.SPOT.Presentation.Media;
 
-namespace GHIElectronics.NETMF.Glide.Display
+namespace GHI.Glide.Display
 {
     /// <summary>
     /// The Window class inherits from: DisplayObjectContainer, DisplayObject

@@ -7,9 +7,9 @@
 using System;
 using Microsoft.SPOT;
 using Microsoft.SPOT.Presentation.Media;
-using GHIElectronics.NETMF.Glide.Display;
+using GHI.Glide.Display;
 
-namespace GHIElectronics.NETMF.Glide.UI
+namespace GHI.Glide.UI
 {
     /// <summary>
     /// The Modal component displays a box of text to instruct and inform the user.

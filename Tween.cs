@@ -8,9 +8,9 @@ using System;
 using System.Threading;
 using Microsoft.SPOT;
 using Microsoft.SPOT.Presentation.Media;
-using GHIElectronics.NETMF.Glide.Display;
+using GHI.Glide.Display;
 
-namespace GHIElectronics.NETMF.Glide
+namespace GHI.Glide
 {
     /// <summary>
     /// Holds the steps for different animations.

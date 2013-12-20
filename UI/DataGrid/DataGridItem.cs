@@ -7,7 +7,7 @@
 using System;
 using System.Collections;
 
-namespace GHIElectronics.NETMF.Glide.UI
+namespace GHI.Glide.UI
 {
     /// <summary>
     /// The DataGridItem class describes an item in a DataGrid component.

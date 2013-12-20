@@ -7,10 +7,10 @@
 using System;
 using System.Threading;
 using Microsoft.SPOT;
-using GHIElectronics.NETMF.Glide.Display;
-using GHIElectronics.NETMF.Glide.Geom;
+using GHI.Glide.Display;
+using GHI.Glide.Geom;
 
-namespace GHIElectronics.NETMF.Glide.UI
+namespace GHI.Glide.UI
 {
     /// <summary>
     /// The Keyboard component is an on-screen keyboard that allows user input.

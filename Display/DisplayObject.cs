@@ -6,9 +6,9 @@
 
 using System.Threading;
 using Microsoft.SPOT;
-using GHIElectronics.NETMF.Glide.Geom;
+using GHI.Glide.Geom;
 
-namespace GHIElectronics.NETMF.Glide.Display
+namespace GHI.Glide.Display
 {
     /// <summary>
     /// The DisplayObject is the base class for all objects.

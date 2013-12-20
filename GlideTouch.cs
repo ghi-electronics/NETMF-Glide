@@ -11,9 +11,9 @@ using Microsoft.SPOT.Hardware;
 using Microsoft.SPOT.Touch;
 using Microsoft.SPOT.Presentation;
 using Microsoft.SPOT.Presentation.Media;
-using GHIElectronics.NETMF.Glide.Geom;
+using GHI.Glide.Geom;
 
-namespace GHIElectronics.NETMF.Glide
+namespace GHI.Glide
 {
     /// <summary>
     /// Touch event arguments.

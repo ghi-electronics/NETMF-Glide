@@ -8,10 +8,10 @@ using System;
 using System.Collections;
 using System.Threading;
 using Microsoft.SPOT;
-using GHIElectronics.NETMF.Glide.Display;
-using GHIElectronics.NETMF.Glide.Geom;
+using GHI.Glide.Display;
+using GHI.Glide.Geom;
 
-namespace GHIElectronics.NETMF.Glide.UI
+namespace GHI.Glide.UI
 {
     /// <summary>
     /// The list component provides a list of options.

@@ -8,11 +8,11 @@ using System;
 using System.Collections;
 using Microsoft.SPOT;
 using Microsoft.SPOT.Hardware;
-using GHIElectronics.NETMF.Glide.Display;
-using GHIElectronics.NETMF.Glide.Geom;
-using GHIElectronics.NETMF.Glide.UI;
+using GHI.Glide.Display;
+using GHI.Glide.Geom;
+using GHI.Glide.UI;
 
-namespace GHIElectronics.NETMF.Glide
+namespace GHI.Glide
 {
     /// <summary>
     /// The Glide class provides core functionality.
@@ -29,7 +29,7 @@ namespace GHIElectronics.NETMF.Glide
 
         static Glide()
         {
-            Version = "1.0.6";
+            Version = "1.0.7";
 
             int width, height, bitsPerPixel, orientationDeg;
             HardwareProvider.HwProvider.GetLCDMetrics(out width, out height, out bitsPerPixel, out orientationDeg);

@@ -6,9 +6,9 @@
 
 using System;
 using Microsoft.SPOT;
-using GHIElectronics.NETMF.Glide.Display;
+using GHI.Glide.Display;
 
-namespace GHIElectronics.NETMF.Glide.UI
+namespace GHI.Glide.UI
 {
     /// <summary>
     /// The ListItem class holds information relevant to a specific option in a list-based component.

@@ -6,9 +6,9 @@
 
 using System;
 using Microsoft.SPOT;
-using GHIElectronics.NETMF.Glide.Display;
+using GHI.Glide.Display;
 
-namespace GHIElectronics.NETMF.Glide.UI
+namespace GHI.Glide.UI
 {
     /// <summary>
     /// The ProgressBar component displays the progress of content that is being loaded.

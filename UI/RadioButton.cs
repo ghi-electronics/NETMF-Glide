@@ -7,9 +7,9 @@
 using System;
 using Microsoft.SPOT;
 using Microsoft.SPOT.Presentation.Media;
-using GHIElectronics.NETMF.Glide.Display;
+using GHI.Glide.Display;
 
-namespace GHIElectronics.NETMF.Glide.UI
+namespace GHI.Glide.UI
 {
     /// <summary>
     /// The RadioButton component lets a user to make a single selection from a set of choices.

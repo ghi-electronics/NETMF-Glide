@@ -8,9 +8,9 @@ using System;
 using System.Collections;
 using Microsoft.SPOT;
 using Microsoft.SPOT.Presentation.Media;
-using GHIElectronics.NETMF.Glide.Display;
+using GHI.Glide.Display;
 
-namespace GHIElectronics.NETMF.Glide.UI
+namespace GHI.Glide.UI
 {
     /// <summary>
     /// The Canvas component provides methods to draw.

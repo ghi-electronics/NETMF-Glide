@@ -8,7 +8,7 @@ using System;
 using Microsoft.SPOT;
 using Microsoft.SPOT.Presentation.Media;
 
-namespace GHIElectronics.NETMF.Glide
+namespace GHI.Glide
 {
     /// <summary>
     /// The Colors class contains a list of defined colors.

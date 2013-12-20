@@ -8,9 +8,9 @@ using System;
 
 using Microsoft.SPOT;
 
-using GHIElectronics.NETMF.Glide.Display;
+using GHI.Glide.Display;
 
-namespace GHIElectronics.NETMF.Glide.UI
+namespace GHI.Glide.UI
 {
     interface IListItem
     {

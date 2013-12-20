@@ -8,10 +8,10 @@ using System;
 using System.Collections;
 using Microsoft.SPOT;
 using Microsoft.SPOT.Presentation.Media;
-using GHIElectronics.NETMF.Glide.Display;
-using GHIElectronics.NETMF.Glide.Geom;
+using GHI.Glide.Display;
+using GHI.Glide.Geom;
 
-namespace GHIElectronics.NETMF.Glide.UI
+namespace GHI.Glide.UI
 {
     /// <summary>
     /// THe Dropdown component contains a list of options in which a user can select one.

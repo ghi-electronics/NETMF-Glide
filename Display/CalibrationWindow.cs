@@ -8,10 +8,10 @@ using System;
 using System.Threading;
 using Microsoft.SPOT;
 using Microsoft.SPOT.Touch;
-using GHIElectronics.NETMF.Glide.Geom;
-using GHIElectronics.NETMF.Glide.UI;
+using GHI.Glide.Geom;
+using GHI.Glide.UI;
 
-namespace GHIElectronics.NETMF.Glide.Display
+namespace GHI.Glide.Display
 {
     /// <summary>
     /// The CalibrationWindow allows you to easily calibrate your touchscreen.

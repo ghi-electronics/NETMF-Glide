@@ -7,7 +7,7 @@
 using System;
 using Microsoft.SPOT;
 
-namespace GHIElectronics.NETMF.Glide
+namespace GHI.Glide
 {
     /// <summary>
     /// Tap event handler.

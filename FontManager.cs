@@ -6,9 +6,9 @@
 
 using System;
 using Microsoft.SPOT;
-using GHIElectronics.NETMF.Glide.Geom;
+using GHI.Glide.Geom;
 
-namespace GHIElectronics.NETMF.Glide
+namespace GHI.Glide
 {
     /// <summary>
     /// Manages font-related functionality.

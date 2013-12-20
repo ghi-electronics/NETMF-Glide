@@ -6,11 +6,11 @@
 
 using System;
 using System.Collections;
-using GHIElectronics.NETMF.Glide.Display;
-using GHIElectronics.NETMF.Glide.Geom;
-using GHIElectronics.NETMF.Glide.UI;
+using GHI.Glide.Display;
+using GHI.Glide.Geom;
+using GHI.Glide.UI;
 
-namespace GHIElectronics.NETMF.Glide
+namespace GHI.Glide
 {
     /// <summary>
     /// The RadioButtonManager manages groups of RadioButtons.

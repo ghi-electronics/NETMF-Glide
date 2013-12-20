@@ -6,7 +6,7 @@
 
 using System;
 
-namespace GHIElectronics.NETMF.Glide.Geom
+namespace GHI.Glide.Geom
 {
     /// <summary>
     /// The Point object represents a location in a two-dimensional coordinate system.

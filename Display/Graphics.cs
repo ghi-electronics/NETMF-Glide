@@ -7,9 +7,9 @@
 using System;
 using Microsoft.SPOT;
 using Microsoft.SPOT.Presentation.Media;
-using GHIElectronics.NETMF.Glide.Geom;
+using GHI.Glide.Geom;
 
-namespace GHIElectronics.NETMF.Glide.Display
+namespace GHI.Glide.Display
 {
     /// <summary>
     /// The Graphics class contains a set of methods you can use to draw on itself.

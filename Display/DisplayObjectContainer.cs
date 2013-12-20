@@ -8,7 +8,7 @@ using System.Collections;
 using Microsoft.SPOT;
 using Microsoft.SPOT.Presentation.Media;
 
-namespace GHIElectronics.NETMF.Glide.Display
+namespace GHI.Glide.Display
 {
     /// <summary>
     /// The DisplayObjectContainer class is the base class for all objects that can serve as display object containers on the display list.

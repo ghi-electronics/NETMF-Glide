@@ -7,10 +7,10 @@
 using System;
 using Microsoft.SPOT;
 using Microsoft.SPOT.Presentation.Media;
-using GHIElectronics.NETMF.Glide.Display;
-using GHIElectronics.NETMF.Glide.Geom;
+using GHI.Glide.Display;
+using GHI.Glide.Geom;
 
-namespace GHIElectronics.NETMF.Glide.UI
+namespace GHI.Glide.UI
 {
     /// <summary>
     /// The TextBlock component is a multiline text field.
