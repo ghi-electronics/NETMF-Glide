@@ -26,6 +26,7 @@ namespace GHI.Glide
         private static InputBox _inputBox;
         private static Dropdown _dropdown;
         private static List _list;
+        private static Size screenSize;
 
         static Glide()
         {
@@ -51,6 +52,56 @@ namespace GHI.Glide
             Bitmap loading = Resources.GetBitmap(Resources.BitmapResources.loading);
             screen.DrawImage((LCD.Width - loading.Width) / 2, (LCD.Height - loading.Height) / 2, loading, 0, 0, loading.Width, loading.Height);
             screen.Flush();
+        }
+
+        /// <summary>
+        /// Returns the screen resolution.
+        /// </summary>
+        public static Size LCD
+        {
+            get
+            {
+                return Glide.screenSize;
+            }
+            private set
+            {
+                Glide.screenSize = value;
+            }
+        }
+
+        /// <summary>
+        /// Returns a reference to the bitmap that represents the current screen.
+        /// This is only useful for drawing the bitmap to a display that does not
+        /// support bitmap.flush().
+        /// </summary>
+        public static Bitmap Screen
+        {
+            get
+            {
+                return Glide.screen;
+            }
+        }
+
+        /// <summary>
+        /// This method changes the underlying size of the bitmap that is drawn to
+        /// the screen. Do not call this method if you are using a regular display.
+        /// It is only useful when you are using a non-native display such as a
+        /// SPI display like our DisplayN18.
+        /// </summary>
+        /// <param name="width">The width of the display.</param>
+        /// <param name="height">The height of the display.</param>
+        public static void SetScreenSize(int width, int height)
+        {
+            if (width <= 0 || height <= 0)
+                throw new ArgumentException("Width and height must be positive.");
+
+            Glide.screenSize.Width = width;
+            Glide.screenSize.Height = height;
+
+            Glide.screen.Dispose();
+            Glide.screen = new Bitmap(width, height);
+
+            Glide.MessageBoxManager = new MessageBoxManager();
         }
 
         /// <summary>
@@ -256,11 +307,6 @@ namespace GHI.Glide
         /// Glide's version number.
         /// </summary>
         public static readonly string Version;
-
-        /// <summary>
-        /// Contains the LCD resolution.
-        /// </summary>
-        public static readonly Size LCD;
 
         /// <summary>
         /// Indicates whether or not we're using the emulator.
