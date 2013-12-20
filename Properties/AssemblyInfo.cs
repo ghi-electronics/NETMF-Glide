@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Glide")]
+[assembly: AssemblyTitle("GHI.Glide")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("GHI Electronics, LLC")]
-[assembly: AssemblyProduct("Glide")]
+[assembly: AssemblyProduct("GHI.Glide")]
 [assembly: AssemblyCopyright("Copyright GHI Electronics, LLC ©  2010")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -21,5 +21,5 @@ using System.Runtime.InteropServices;
 //      Build Number
 //      Revision
 //
-[assembly: AssemblyVersion("0.1.0.7")]
-[assembly: AssemblyFileVersion("0.1.0.7")]
+[assembly: AssemblyVersion("1.0.7.0")]
+[assembly: AssemblyFileVersion("1.0.7.0")]
