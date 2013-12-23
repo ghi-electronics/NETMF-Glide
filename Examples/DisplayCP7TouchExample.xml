@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<example>
+  Create a new .NET Gadgeteer project using the .NET Gadgeteer Application template and call it "Test".
+  Next, open Resources.resx, and add a new string resource with the name "Window" and the below
+  XML as the contents. Then open Program.gadgeteer and drag your choosen mainboard and the Display CP7
+  on to the designer surface making the appropriate connections.
+  <code>
+    <![CDATA[
+<Glide Version="1.0.7">
+  <Window Name="window" Width="800" Height="480" BackColor="dce3e7">
+    <Button Name="btn" X="100" Y="104" Width="120" Height="32" Alpha="255" Text="Click me" Font="4" FontColor="000000" DisabledFontColor="808080" TintColor="000000" TintAmount="0"/>
+  </Window>
+</Glide>
+  ]]>
+  </code>
+  Open Program.cs and replace the code with the code below:
+  <code>
+    <![CDATA[
+using Gadgeteer.Modules.GHIElectronics;
+
+using Microsoft.SPOT;
+
+using System;
+
+using GHI.Glide;
+using GHI.Glide.Display;
+using GHI.Glide.Geom;
+using GHI.Glide.UI;
+
+namespace Test
+{
+    public partial class Program
+    {
+        Point last = new Point(0, 0);
+        bool touched = false;
+
+        void ProgramStarted()
+        {
+            //Configure touch
+            GlideTouch.Initialize();
+            
+            display_CP7.ScreenPressed += display_CP7_ScreenPressed;
+            display_CP7.ScreenReleased += display_CP7_ScreenReleased;
+            display_CP7.GestureDetected += display_CP7_GestureDetected;
+
+            //Load the Window XML string.
+            Window window = GlideLoader.LoadWindow(Resources.GetString(Resources.StringResources.Window));
+
+            //Assign the Window to MainWindow; rendering it to the LCD.
+            Glide.MainWindow = window;
+
+            //Set the button events
+            Button btn = (Button)window.GetChildByName("btn");
+            btn.PressEvent += (o) => Debug.Print("Pressed");
+            btn.ReleaseEvent += (o) => Debug.Print("Released");
+            btn.TapEvent += (o) => Debug.Print("Tapped");
+        }
+
+        void display_CP7_ScreenPressed(Display_CP7 sender, Display_CP7.TouchStatus touchStatus)
+        {
+            if (touchStatus.numTouches <= 0 || GlideTouch.IgnoreAllEvents)
+                return;
+
+            Point touch = new Point(touchStatus.touchPos[0].xPos, touchStatus.touchPos[0].yPos);
+
+            if (this.touched)
+            {
+                this.last.X = touch.X;
+                this.last.Y = touch.Y;
+
+                if (this.last.X != touch.X || this.last.Y != touch.Y)
+                    GlideTouch.RaiseTouchMoveEvent(null, new TouchEventArgs(touch));
+            }
+            else
+            {
+                this.last.X = touch.X;
+                this.last.Y = touch.Y;
+                this.touched = true;
+
+                GlideTouch.RaiseTouchDownEvent(null, new TouchEventArgs(touch));
+            }
+        }
+
+        void display_CP7_ScreenReleased(Display_CP7 sender)
+        {
+            this.touched = false;
+                
+            GlideTouch.RaiseTouchUpEvent(null, new TouchEventArgs(this.last));
+        }
+
+        void display_CP7_GestureDetected(Display_CP7 sender, Display_CP7.Gesture_ID id)
+        {
+            switch (id)
+            {
+                case Display_CP7.Gesture_ID.Move_Up: GlideTouch.RaiseTouchGestureEvent(null, new TouchGestureEventArgs(TouchGesture.Up, this.last.X, this.last.Y, 0, DateTime.Now)); break;
+                case Display_CP7.Gesture_ID.Move_Left: GlideTouch.RaiseTouchGestureEvent(null, new TouchGestureEventArgs(TouchGesture.Left, this.last.X, this.last.Y, 0, DateTime.Now)); break;
+                case Display_CP7.Gesture_ID.Move_Down: GlideTouch.RaiseTouchGestureEvent(null, new TouchGestureEventArgs(TouchGesture.Down, this.last.X, this.last.Y, 0, DateTime.Now)); break;
+                case Display_CP7.Gesture_ID.Move_Right: GlideTouch.RaiseTouchGestureEvent(null, new TouchGestureEventArgs(TouchGesture.Right, this.last.X, this.last.Y, 0, DateTime.Now)); break;
+                case Display_CP7.Gesture_ID.No_Gesture: GlideTouch.RaiseTouchGestureEvent(null, new TouchGestureEventArgs(TouchGesture.NoGesture, this.last.X, this.last.Y, 0, DateTime.Now)); break;
+                case Display_CP7.Gesture_ID.Zoom_In:
+                case Display_CP7.Gesture_ID.Zoom_Out: 
+                    GlideTouch.RaiseTouchGestureEvent(null, new TouchGestureEventArgs(TouchGesture.Zoom, this.last.X, this.last.Y, 0, DateTime.Now)); 
+                    break;
+            }
+        }
+    }
+}
+  ]]>
+  </code>
+  Before we run it, we must add the Glide reference by right-clicking References and selecting Add Reference.
+  In the new window select the Browse tab, locate GHI.Glide and click Ok.
+  Now that everything is ready, press F5 to run the example.
+</example>

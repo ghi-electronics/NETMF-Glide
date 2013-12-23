@@ -128,6 +128,9 @@
     <Content Include="Examples\CalibrationWindowExample.xml" />
     <Content Include="Examples\CanvasExample.xml" />
     <Content Include="Examples\CheckBoxExample.xml" />
+    <Content Include="Examples\DisplayCP7TouchExample.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Examples\DropdownExample.xml" />
     <Content Include="Examples\DataGridExample.xml">
       <SubType>Designer</SubType>
