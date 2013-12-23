@@ -2,7 +2,7 @@
 <example>
   Create a new .NET Gadgeteer project using the .NET Gadgeteer Application template and call it "Test".
   Next, open Resources.resx, and add a new string resource with the name "Window" and the below
-  XML as the contents. Then open Program.gadgeteer and drag your choosen mainboard and the Display CP7
+  XML as the contents. Then open Program.gadgeteer and drag your chosen mainboard and the Display CP7
   on to the designer surface making the appropriate connections.
   <code>
     <![CDATA[
