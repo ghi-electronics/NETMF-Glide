@@ -37,8 +37,6 @@ namespace Test
         void ProgramStarted()
         {
             //Configure touch
-            GlideTouch.Initialize();
-            
             display_CP7.ScreenPressed += display_CP7_ScreenPressed;
             display_CP7.ScreenReleased += display_CP7_ScreenReleased;
             display_CP7.GestureDetected += display_CP7_GestureDetected;
