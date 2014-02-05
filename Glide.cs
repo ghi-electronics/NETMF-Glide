@@ -30,8 +30,6 @@ namespace GHI.Glide
 
         static Glide()
         {
-            Version = "1.0.7";
-
             int width, height, bitsPerPixel, orientationDeg;
             HardwareProvider.HwProvider.GetLCDMetrics(out width, out height, out bitsPerPixel, out orientationDeg);
             LCD = new Size() { Width = width, Height = height };
@@ -302,11 +300,6 @@ namespace GHI.Glide
 
             return keyboard;
         }
-
-        /// <summary>
-        /// Glide's version number.
-        /// </summary>
-        public static readonly string Version;
 
         /// <summary>
         /// Indicates whether or not we're using the emulator.

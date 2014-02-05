@@ -8,7 +8,7 @@
     <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{651E1954-C480-4034-854E-DDA79283EDB7}</ProjectGuid>
-    <TargetFrameworkVersion>v4.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.3</TargetFrameworkVersion>
     <NetMfTargetsBaseDir Condition="'$(NetMfTargetsBaseDir)'==''">$(MSBuildExtensionsPath32)\Microsoft\.NET Micro Framework\</NetMfTargetsBaseDir>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -140,7 +140,7 @@
     </Content>
     <Content Include="Examples\MessageBoxExample.xml" />
     <Content Include="Examples\TextBlockExample.xml" />
-    <Content Include="Examples\PasswordBox.xml" />
+    <Content Include="Examples\PasswordBoxExample.xml" />
     <Content Include="Examples\ProgressBarExample.xml" />
     <Content Include="Examples\RadioButtonExample.xml" />
     <Content Include="Examples\SliderExample.xml">

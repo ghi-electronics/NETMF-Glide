@@ -6,7 +6,7 @@
   Now, copy the XML below and paste it into the file and save.
   <code>
     <![CDATA[
-<Glide Version="1.0.7">
+<Glide>
   <Window Name="window" Width="320" Height="240" BackColor="00A9AF">
     <Image Name="image" X="90" Y="95" Width="140" Height="50" Alpha="255"/>
   </Window>

@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("GHI.Glide")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("GHI Electronics, LLC")]
+[assembly: AssemblyCompany("GHI Electronics")]
 [assembly: AssemblyProduct("GHI.Glide")]
-[assembly: AssemblyCopyright("Copyright GHI Electronics, LLC ©  2010")]
+[assembly: AssemblyCopyright("Copyright © GHI Electronics 2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -21,5 +21,5 @@ using System.Runtime.InteropServices;
 //      Build Number
 //      Revision
 //
-[assembly: AssemblyVersion("1.0.7.0")]
-[assembly: AssemblyFileVersion("1.0.7.0")]
+[assembly: AssemblyVersion("4.3.0.0")]
+[assembly: AssemblyFileVersion("4.3.0.0")]

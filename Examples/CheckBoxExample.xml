@@ -6,7 +6,7 @@
   Now, copy the XML below and paste it into the file and save.
   <code>
     <![CDATA[
-<Glide Version="1.0.7">
+<Glide>
   <Window Name="window" Width="320" Height="240" BackColor="dce3e7">
     <TextBlock Name="textBlock" X="132" Y="104" Width="120" Height="32" Alpha="255" Text="Remember me" TextAlign="Left" TextVerticalAlign="Middle" Font="4" FontColor="000000"/>
     <CheckBox Name="checkBox" X="92" Y="104" Width="32" Height="32" Alpha="255" Checked="False"/>

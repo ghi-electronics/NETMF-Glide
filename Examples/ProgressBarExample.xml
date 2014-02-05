@@ -6,7 +6,7 @@
   Now, copy the XML below and paste it into the file and save.
   <code>
     <![CDATA[
-<Glide Version="1.0.7">
+<Glide>
   <Window Name="window" Width="320" Height="240" BackColor="dce3e7">
     <ProgressBar Name="progressBar" X="85" Y="112" Width="150" Height="16" Alpha="255" Direction="Right" MaxValue="100" Value="0"/>
   </Window>

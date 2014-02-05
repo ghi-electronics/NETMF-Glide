@@ -56,10 +56,6 @@ namespace GHI.Glide
             if(!reader.ReadToDescendant("Glide"))
                 throw new ArgumentException("Glide not detected.");
 
-            string version = reader.GetAttribute(0);
-            if (version != Glide.Version)
-                throw new ArgumentException("XML (V " + version + ") is incompatible with Glide V " + Glide.Version + ".");
-
             stream.Seek(0, SeekOrigin.Begin);
             reader = XmlReader.Create(stream, xmlReaderSettings);
 
