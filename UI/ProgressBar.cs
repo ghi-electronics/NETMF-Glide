@@ -13,7 +13,6 @@ namespace GHI.Glide.UI
     /// <summary>
     /// The ProgressBar component displays the progress of content that is being loaded.
     /// </summary>
-    /// <include file='Examples\\ProgressBarExample.xml' path='example'></include>
     public class ProgressBar : DisplayObject
     {
         private Bitmap _ProgressBar = Resources.GetBitmap(Resources.BitmapResources.ProgressBar);

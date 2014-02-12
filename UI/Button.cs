@@ -15,7 +15,6 @@ namespace GHI.Glide.UI
     /// <summary>
     /// The Button component represents a rectangular button.
     /// </summary>
-    /// <include file='Examples\\ButtonExample.xml' path='example'></include>
     public class Button : DisplayObject
     {
         private bool _pressed = false;

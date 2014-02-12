@@ -15,7 +15,6 @@ namespace GHI.Glide.UI
     /// <summary>
     /// The Image component allows displaying images.
     /// </summary>
-    /// <include file='Examples\\ImageExample.xml' path='example'></include>
     public class Image : DisplayObject
     {
         private bool _pressed;

@@ -122,33 +122,6 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <Content Include="Examples\ButtonExample.xml">
-      <SubType>Designer</SubType>
-    </Content>
-    <Content Include="Examples\CalibrationWindowExample.xml" />
-    <Content Include="Examples\CanvasExample.xml" />
-    <Content Include="Examples\CheckBoxExample.xml" />
-    <Content Include="Examples\DisplayCP7TouchExample.xml">
-      <SubType>Designer</SubType>
-    </Content>
-    <Content Include="Examples\DropdownExample.xml" />
-    <Content Include="Examples\DataGridExample.xml">
-      <SubType>Designer</SubType>
-    </Content>
-    <Content Include="Examples\ImageExample.xml">
-      <SubType>Designer</SubType>
-    </Content>
-    <Content Include="Examples\MessageBoxExample.xml" />
-    <Content Include="Examples\TextBlockExample.xml" />
-    <Content Include="Examples\PasswordBoxExample.xml" />
-    <Content Include="Examples\ProgressBarExample.xml" />
-    <Content Include="Examples\RadioButtonExample.xml" />
-    <Content Include="Examples\SliderExample.xml">
-      <SubType>Designer</SubType>
-    </Content>
-    <Content Include="Examples\TextBoxExample.xml">
-      <SubType>Designer</SubType>
-    </Content>
     <None Include="Resources\Modal.gif" />
     <None Include="Resources\RadioButton.gif" />
     <None Include="Resources\CheckBox_On.gif" />

@@ -20,7 +20,6 @@ namespace GHI.Glide.UI
     /// When this component is asked to render by it's parent the queue will be drawn onto it's parent container's graphics.
     /// This makes it a good choice for drawing organizing shapes such as fieldsets and separator lines.
     /// </remarks>
-    /// <include file='Examples\\CanvasExample.xml' path='example'></include>
     public class Canvas : DisplayObject
     {
         private ArrayList _queue = new ArrayList();

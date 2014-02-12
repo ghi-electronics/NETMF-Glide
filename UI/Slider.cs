@@ -16,7 +16,6 @@ namespace GHI.Glide.UI
     /// <summary>
     /// The Slider component lets users select a value by sliding a knob along a track.
     /// </summary>
-    /// <include file='Examples\\SliderExample.xml' path='example'></include>
     public class Slider : DisplayObject
     {
         private Bitmap _Button_Up = Resources.GetBitmap(Resources.BitmapResources.Button_Up);

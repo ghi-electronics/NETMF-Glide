@@ -14,7 +14,6 @@ namespace GHI.Glide.UI
     /// <summary>
     /// The MessageBox component displays a box of text to instruct and inform the user.
     /// </summary>
-    /// <include file='Examples\\MessageBoxExample.xml' path='example'></include>
     public class MessageBox : Modal
     {
         /// <summary>

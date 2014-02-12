@@ -16,7 +16,6 @@ namespace GHI.Glide.Display
     /// <summary>
     /// The CalibrationWindow allows you to easily calibrate your touchscreen.
     /// </summary>
-    /// <include file='Examples\\CalibrationWindowExample.xml' path='example'></include>
     public class CalibrationWindow : Window
     {
         private bool _autoStart = false;

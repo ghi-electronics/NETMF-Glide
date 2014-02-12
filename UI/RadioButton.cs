@@ -14,7 +14,6 @@ namespace GHI.Glide.UI
     /// <summary>
     /// The RadioButton component lets a user to make a single selection from a set of choices.
     /// </summary>
-    /// <include file='Examples\\RadioButtonExample.xml' path='example'></include>
     public class RadioButton : DisplayObject
     {
         private Bitmap _RadioButton = Resources.GetBitmap(Resources.BitmapResources.RadioButton);

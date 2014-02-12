@@ -16,7 +16,6 @@ namespace GHI.Glide.UI
     /// <summary>
     /// THe Dropdown component contains a list of options in which a user can select one.
     /// </summary>
-    /// <include file='Examples\\DropdownExample.xml' path='example'></include>
     public class Dropdown : DisplayObject
     {
         private Bitmap _DropdownText_Up = Resources.GetBitmap(Resources.BitmapResources.DropdownText_Up);

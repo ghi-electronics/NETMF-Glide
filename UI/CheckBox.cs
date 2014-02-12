@@ -12,7 +12,6 @@ namespace GHI.Glide.UI
     /// <summary>
     /// The CheckBox component contains a small box that can be check marked.
     /// </summary>
-    /// <include file='Examples\\CheckBoxExample.xml' path='example'></include>
     public class CheckBox : DisplayObject
     {
         private Bitmap _CheckBox_On = Resources.GetBitmap(Resources.BitmapResources.CheckBox_On);

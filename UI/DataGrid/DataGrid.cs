@@ -17,7 +17,6 @@ namespace GHI.Glide.UI
     /// <summary>
     /// The DataGrid component is a list-based component that provides a grid of rows and columns.
     /// </summary>
-    /// <include file='Examples\\DataGridExample.xml' path='example'></include>
     public class DataGrid : DisplayObject
     {
         private ArrayList _columns = new ArrayList();

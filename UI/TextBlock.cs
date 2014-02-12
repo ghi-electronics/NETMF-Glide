@@ -15,7 +15,6 @@ namespace GHI.Glide.UI
     /// <summary>
     /// The TextBlock component is a multiline text field.
     /// </summary>
-    /// <include file='Examples\\TextBlockExample.xml' path='example'></include>
     public class TextBlock : DisplayObject
     {
         private bool _pressed = false;

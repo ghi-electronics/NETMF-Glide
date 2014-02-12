@@ -15,7 +15,6 @@ namespace GHI.Glide.UI
     /// <summary>
     /// The TextBox component is a single-line text input.
     /// </summary>
-    /// <include file='Examples\\TextBoxExample.xml' path='example'></include>
     public class TextBox : InputBox
     {
         /// <summary>
