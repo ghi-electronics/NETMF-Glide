@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("GHI Electronics")]
 [assembly: AssemblyProduct("GHI.Glide")]
-[assembly: AssemblyCopyright("Copyright © GHI Electronics 2014")]
+[assembly: AssemblyCopyright("Copyright © GHI Electronics, LLC 2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
