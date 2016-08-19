@@ -151,8 +151,11 @@ namespace GHI.Glide.UI
             if (!_moving)
             {
                 int index = (int)System.Math.Floor(((_listY + e.Point.Y) - Y) / this[0].Height);
-                ListItem option = (ListItem)this[index];
-                TriggerTapOptionEvent(this, new TapOptionEventArgs(index, option.Label, option.Value));
+                if (index >= 0 && index < this.NumChildren) 
+                {
+                    ListItem option = (ListItem)this[index];
+                    TriggerTapOptionEvent(this, new TapOptionEventArgs(index, option.Label, option.Value));
+                }
             }
             else
                 _moving = false;
