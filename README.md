@@ -1,4 +1,7 @@
 # NETMF Glide #
+
+This is the repository for Glide, our graphical library for NETMF. While we are keeping it up, it is no longer being actively maintained.
+
 Glide is a graphical library for .NET Micro Framework (NETMF) that uses a graphical screen designer. Glide provides a more responsive experience then NETMF's built-in Windows Presentation Foundation (WPF) with many additional features, from buttons and lists to keyboards and message boxes. Glide only uses standard NETMF calls so it can run on the default NETMF emulator or any NETMF device with graphics support.
 
 ## Components ##
